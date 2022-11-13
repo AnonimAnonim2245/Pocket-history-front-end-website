@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Sport Records </title>
+     <style>
+    
+        *{
+        margin: 0;
+        padding: 0;
+        font-family: Century Gothic;
+        font-size: 20px;
+        }
+        body{
+        font-family: 'Playfair Display', serif;
+        }
+        .container {
+            animation: transitionIn 0.75s;
+        }
+        @keyframes transitionIn {
+            from {
+               opacity: 0;
+                transform: rotateX(-10deg);
+
+
+            }
+            to {
+                opacity: 1;
+                transform: rotateX(0);
+
+            }
+        }
+
+
+        header{
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/history.jpg);
+            height: 600vh;
+            background-size: cover;
+            background-position:center;
+        }
+        ul{
+        float: right;
+        list-style-type: none;
+        margin-top: 25px;
+        }
+
+        ul li{
+           display: inline-block;
+        }
+        ul li a{
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid transparent;  
+            transition: 0.6s ease;
+
+        }
+        ul li a:hover{
+            background-color: #fff;
+            color: #000;
+
+        }
+        ul li.active a{
+           background-color: #fff;
+            color: #000;
+        }
+        .logo img{
+            float:left;
+            width: 150px;
+            height: auto;
+        }
+        .main{
+        max-width: 2400px;
+        margin: auto;
+        }
+        .title{
+            position:absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-40%,-300%);
+        }
+        .title h1{
+            color:#fff;
+            font-size: 70px;
+        }
+        .row{
+            display:flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .col-2 h1{
+            color: #fff;
+            font-size: 40px;
+            flex-basis: 50%;
+            min-width: 700px;
+            transform: translate(-10%,150%);
+        }
+        p{
+            color:#fff;
+         }
+         .col-3 img{
+             position: absolute;
+             flex-basis: 50%;
+             min-width:100px;
+             top : 550px;
+             left: 50px;
+         }
+         .col-3 h1{
+             position: absolute;
+             color:#fff;
+             flex-basis: 50%;
+             font-size: 40px;
+             min-width:300px;
+             top : 400px;
+             left: 50px;
+         }
+         .col-3 p{
+            position: absolute;
+             flex-basis: 50%;
+             min-width:300px;
+             top : 450px;
+             left: 50px;
+         }
+         .col-4 img{
+             position: absolute;
+             flex-basis: 50%;
+             min-width: 100px;
+             left: 50px;
+             top: 1150px;
+         }
+         .col-4 h1{
+              position: absolute;
+             color:#fff;
+             flex-basis: 50%;
+             font-size: 40px;
+             min-width:300px;
+             top: 1000px;
+             left: 50px;
+             
+         }
+         .col-4 p{
+        
+             position: absolute;
+             flex-basis: 50%;
+             min-width: 100px;
+             left: 50px;
+             top: 1050px;
+         }
+           .col-5 img{
+             position: absolute;
+             flex-basis: 50%;
+             min-width: 50px;
+             left: 50px;
+             top: 1850px;
+         }
+         .col-5 h1{
+              position: absolute;
+             color:#fff;
+             flex-basis: 50%;
+             font-size: 40px;
+             min-width:300px;
+             top: 1600px;
+             left: 50px;
+             
+         }
+         .col-5 p{
+        
+             position: absolute;
+             flex-basis: 50%;
+             min-width: 100px;
+             left: 50px;
+             top: 1700px;
+         }  
+         .col-6 img{
+             position: absolute;
+             flex-basis: 50%;
+             min-width: 50px;
+             left: 50px;
+             top: 2400px;
+             
+         }
+          .col-6 h1{
+              position: absolute;
+             color:#fff;
+             flex-basis: 50%;
+             font-size: 40px;
+             min-width:300px;
+             top: 2300px;
+             left: 50px;
+             
+         }
+         .col-6 p{
+        
+             position: absolute;
+             flex-basis: 50%;
+             min-width: 100px;
+             left: 50px;
+             top: 2350px;
+         } 
+           .col-7 img{
+             position: absolute;
+             flex-basis: 50%;
+             min-width: 50px;
+             left: 50px;
+             top: 2900px;
+             
+         }
+          .col-7 h1{
+              position: absolute;
+             color:#fff;
+             flex-basis: 50%;
+             font-size: 40px;
+             min-width:300px;
+             top: 2750px;
+             left: 50px;
+             
+         }
+         .col-7 p{
+        
+             position: absolute;
+             flex-basis: 50%;
+             min-width: 100px;
+             left: 50px;
+             top: 2800px;
+         }
+            .col-8 img{
+             position: absolute;
+             flex-basis: 50%;
+             min-width: 50px;
+             left: 50px;
+             top: 3550px;
+             
+         }
+          .col-8 h1{
+              position: absolute;
+             color:#fff;
+             flex-basis: 50%;
+             font-size: 40px;
+             min-width:300px;
+             top: 3350px;
+             left: 50px;
+             
+         }
+         .col-8 p{
+        
+             position: absolute;
+             flex-basis: 50%;
+             min-width: 100px;
+             left: 50px;
+             top: 3400px;
+         } 
+         
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header >
+        <div class="header"></div>
+        <div class="main">
+            <div class="logo">
+                <img src="images/logo.jpg">
+            </div>
+            <ul>
+                <li><a href="index3.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            
+            </ul>
+            
+        
+        </div>
+        <div class="container">
+            <div class="title">
+                <h1 align="center">Pocket History</h1>
+            </div>
+            
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/crimeea.jpg">
+                    <h1>Russian invasion of Crimeea</h1>
+                    <p>In 2014, Russia set a precedent that will lead later to the current invasion of Crimeea. Russia needed Crimeea due to its strategic importance in the Black Sea and to stop Ukraine from extracting the gas resources in the Black Sea</p> 
+                </div>
+                <div class="col-4">
+                    <img src="images/hungary.jpg" width="500" 
+     height="400"   >
+                    <h1>Hungarian Revolution of 1956</h1>
+                    <p>The communist leader Imre Nagy was a communist reformer who sought to democratise the country and pushed for the Hungarian nation to leave the Warsaw pact. He lead the Hungarian Revolution, unfortunately it was crushed by the Soviets. Do you see a pattern here?</p>
+                
+                </div>
+                <div class="col-5">
+                    <img src="images/caesar.jpg" width="500" 
+     height="400" >
+                    <h1>Assasination of Julius Caesar</h1>
+                    <p>Caesar had been recently named “dictator in perpetuity” of the Roman Republic. Ongoing tensions between Caesar and the Senate, amid fears that he also planned to claim the title of king, overthrow the Senate and rule as a tyrant, were the principal motives for his assassination. He would set a precedent for all autocrats all around the world.</p>
+                
+                </div>
+                <div class="col-6">
+                    <img src="images/spanish-inquisition.jpg" width="400" 
+     height="300"  >
+                    <h1>Spanish Inquisition</h1>
+                    <p>Before the Reconquista, Spain was dominated by Caliphate of Cordoba, after it the Spanish Monarchy started to inquisition to expunge and eliminate the "heretics" from the Spanish country.</p>
+                </div>
+                <div class="col-7">
+                    <img src="images/hitler.jpg" width="500" 
+     height="400"  >
+                    <h1>Anschluss of Austria</h1>
+                    <p>Hitler was from Austria and he considered the Austrian people as Germans. His ultimate desire was to unite all German people under one country, thus the slogan "Ein Reich, Ein Volk, Ein Fuhrer".</p>
+                
+                </div>
+                <div class="col-8">
+                    <img src="images/9-11.jpg" width="500" height="400">
+                    <h1>9-11 Attacks</h1>
+                    <p>In bin Laden's November 2002 "Letter to America", he said that al-Qaeda's motives for the attacks included Western support for attacking Muslims in Somalia, supporting Russian atrocities against Muslims in Chechnya, supporting the Indian oppression against Muslims in Kashmir, support for Israel in Lebanon, the presence of US troops in Saudi Arabia,US support of Israel, and sanctions against Iraq.</p>
+                
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
